@@ -5,12 +5,15 @@
  *                      Spinner
  *  Help  Location  Settings  Photos  Directions
  */
+
 /**
  *  @type {string[]}    Valid food types (categories).
  */
-var gaValidFoodTypes = ['american', 'barbecue', 'buffet', 'burgers', 'chinese', 'fast casual', 'fast food',
-                        'indian', 'italian', 'mediterranean', 'mexican', 'pizza', 'pub', 'sandwiches',
-                        'seafood', 'sushi', 'tapas', 'teppanyaki', 'thai', 'vegetarian'];
+var gaValidFoodTypes = ['american', 'barbecue', 'buffet', 'burgers', 'chinese', 'fast food',
+                        'indian', 'italian', 'japanese', 'mediterranean', 'mexican', 'pizza', 'pub',
+                        'sandwiches', 'seafood', 'sushi', 'greek', 'teppanyaki', 'thai',
+                        'vegetarian'
+                        ];
 
 /**
  *  Global data for spinner.
@@ -114,7 +117,7 @@ function photosSuccess(pictures_data) {
  */
 function photosDisplay() {
     console.log('photosDisplay: count: ' + gaPictures.length);
-    $("#photos-modal-span").text('')
+    $("#photos-modal-span").text('');
     var containerElem = $("#photos-modal-wrapper");
 
     // Delete any existing pictures.
