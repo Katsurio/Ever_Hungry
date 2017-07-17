@@ -1,10 +1,7 @@
 /********* Wrappers: *************************/
 /* sets dimensions for main content areas */
 
-/** Everything Wrapper **/
-/**{*/
-/*font-family: 'Oswald', sans-serif;*/
-/*}*/
+
 body {
     width: 100vw;
     height:100vh;
@@ -14,29 +11,24 @@ body {
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 0;
-    top: 0;
     background-color: #EF5350;
-}
-
-.everything-wrapper * {
-    box-sizing: border-box;
 }
 
 /** Header Wrapper **/
 .header-wrapper {
-    height: 6%;
+    height: 12.5%;
     width: 100%;
     position: relative;
     background-color: #D32F2F;
-    max-height: 220px;
-    min-height: 100px;
     font-family: 'Oswald', sans-serif;
+    top: 0;
+    left: 0;
+    z-index: 99;
 }
 
 /** Wheel Wrapper **/
 .wheel-content-wrapper {
-    height: 85%;
+    height: 80%;
     width: 100%;
     position: relative;
     background-color: #FFFFFF;
@@ -44,11 +36,9 @@ body {
 
 /** Footer Wrapper **/
 .footer-wrapper {
-    height: 10%;
+    height: 7.5%;
     width: 100%;
     background-color: #EF5350;
-    margin: auto;
-    box-sizing: border-box;
     position: relative;
     font-size: 0;
 }
@@ -94,7 +84,7 @@ body {
     height: 30%;
     display: inline-block;
     position: relative;
-    top: 29%;
+    top: 25%;
     width: auto;
 }
 
@@ -102,7 +92,9 @@ body {
     display: inline-block;
     color: white;
     position: absolute;
-    width: auto;
+    top: 25%;
+    left: 17.5%;
+    margin: 0;
 }
 
 .header-logo {
@@ -110,9 +102,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-20%, -50%);
+    transform: translate(-50%, -50%);
     box-sizing: border-box;
-    width: 50%;
+    min-width: 240px;
 }
 .header-logo * {
     text-align: center;
@@ -141,7 +133,9 @@ body {
     height: 100%;
     width: 100%;
     font-size: 0;
-    background-image: url('assets/background3.jpg');
+    background: rgba(255, 255, 255, 0.8) url('assets/background3.jpg');
+    background-repeat: repeat-x;
+    background-size: contain;
 }
 
 div.wheel-left {
@@ -149,9 +143,10 @@ div.wheel-left {
     width: 50%;
     position: relative;
     height: 100%;
-    font-size: initial;
+    font-size: 5rem;
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    background-color: transparent;
 }
 
 div.wheel-right {
@@ -167,12 +162,12 @@ div.wheel-right {
 .restaurant {
     display: block;
     width: 100%;
-    padding: 0.5em;
     border: 1px solid black;
     position: relative;
     box-sizing: border-box;
     margin: auto;
     text-align: center;
+    height: 20%;
 }
 
 .restaurant-name {
@@ -195,11 +190,13 @@ div.wheel-right {
 #display-food-type {
     border: 1px solid black;
     height: 15%;
-    width: 90%;
-    text-align: center;
+    width: 95%;
     text-transform: capitalize;
-    margin: 0 5%;
     position: relative;
+    text-align: center;
+    margin: auto;
+    padding: 3.5%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 /** Settings modal and its divs. **/
@@ -238,11 +235,11 @@ div.wheel-right {
 /* for wheel */
 #color-wheel {
     display: inline-block;
-    border-radius: 100%; /* Make this a circular element. */
-    width: 70%;
-    margin: 0 15%;
-    position: absolute;
+    border-radius: 100%;
+    width: 67.5%;
     -webkit-transition: -webkit-transform 2s ease-out;
+    overflow: hidden;
+    margin: 2.5% 15%;
 }
 
 /*********** Footer content *************/
@@ -355,100 +352,100 @@ hr {
 =============================== */
 
 .group::after {
-    content: " ";
-    display: table;
-    clear: both;
+    /*content: " ";*/
+    /*display: table;*/
+    /*clear: both;*/
 }
 
 /* Media Queries
 =============================== */
 
-@media screen and (max-width: 500px) {
-    .header-wrapper,
-    .wheel-content-wrapper,
-    .wheel,
-    .footer-wrapper,
-    .restaurant {
-        display: block;
-        width: 100vw;
-        margin: auto;
-        padding: 0;
-    }
+/*@media screen and (max-width: 500px) {*/
+    /*.header-wrapper,*/
+    /*.wheel-content-wrapper,*/
+    /*.wheel,*/
+    /*.footer-wrapper,*/
+    /*.restaurant {*/
+        /*display: block;*/
+        /*width: 100vw;*/
+        /*margin: auto;*/
+        /*padding: 0;*/
+    /*}*/
 
-    .everything-wrapper {
-        /*height: 100vh;*/
-        margin: 0;
-        width: 100vw;
+    /*.everything-wrapper {*/
+        /*!*height: 100vh;*!*/
+        /*margin: 0;*/
+        /*width: 100vw;*/
 
-    }
+    /*}*/
 
-    #photos-modal-wrapper img {
-        width: 25%;
-        height: auto;
-    }
+    /*#photos-modal-wrapper img {*/
+        /*width: 25%;*/
+        /*height: auto;*/
+    /*}*/
 
-    #div-wheel-left,
-    #div-wheel-right {
-        width: 100%;
-    }
+    /*#div-wheel-left,*/
+    /*#div-wheel-right {*/
+        /*width: 100%;*/
+    /*}*/
 
-    .wheel {
-        height: 100%;
-        box-sizing: border-box;
-        position: relative;
-    }
+    /*.wheel {*/
+        /*height: 100%;*/
+        /*box-sizing: border-box;*/
+        /*position: relative;*/
+    /*}*/
 
-    #div-wheel-right {
-        height: 60%;
-        box-sizing: border-box;
-    }
+    /*#div-wheel-right {*/
+        /*height: 60%;*/
+        /*box-sizing: border-box;*/
+    /*}*/
 
-    #div-wheel-left {
-        height: 40%;
-    }
+    /*#div-wheel-left {*/
+        /*height: 40%;*/
+    /*}*/
 
-    #display-food-type, #spin-button {
-        margin: 0;
-    }
+    /*#display-food-type, #spin-button {*/
+        /*margin: 0;*/
+    /*}*/
 
-    #display-food-type {
-        height: 20%;
-        width: 100%;
-    }
+    /*#display-food-type {*/
+        /*height: 20%;*/
+        /*width: 100%;*/
+    /*}*/
 
-    #color-wheel {
-        height: 80%;
-        width: auto;
-        margin: 0 27.5%;
-    }
+    /*#color-wheel {*/
+        /*height: 80%;*/
+        /*width: auto;*/
+        /*margin: 0 27.5%;*/
+    /*}*/
 
-    .footer-wrapper {
-        max-height: 30px;
-    }
+    /*.footer-wrapper {*/
+        /*max-height: 30px;*/
+    /*}*/
 
-    .restaurant {
-        height: 20%;
-        box-sizing: border-box;
-    }
+    /*.restaurant {*/
+        /*height: 20%;*/
+        /*box-sizing: border-box;*/
+    /*}*/
 
-    .restaurant p, .restaurant button {
-        margin: 0;
-    }
+    /*.restaurant p, .restaurant button {*/
+        /*margin: 0;*/
+    /*}*/
 
-    .wheel-content-wrapper {
-        height: 80%;
-    }
+    /*.wheel-content-wrapper {*/
+        /*height: 80%;*/
+    /*}*/
 
-    #help-modal-wrapper p {
-        font-size: 75%;
-    }
-    .bottom-icons {
-        width: 25%;
-        height: auto;
-        position: relative;
-        display: block;
-        margin: 33px auto;
-        vertical-align: center;
-        top: 30%;
-    }
+    /*#help-modal-wrapper p {*/
+        /*font-size: 75%;*/
+    /*}*/
+    /*.bottom-icons {*/
+        /*width: 25%;*/
+        /*height: auto;*/
+        /*position: relative;*/
+        /*display: block;*/
+        /*margin: 33px auto;*/
+        /*vertical-align: center;*/
+        /*top: 30%;*/
+    /*}*/
 }
