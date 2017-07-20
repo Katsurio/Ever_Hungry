@@ -2,20 +2,19 @@ Ever Hungry?
 ===============
 
 ### Summary
-Ever Hungry is an API rich application that locates nearby restaurants using Google Geolocation and 
+>Ever Hungry is an API rich application that locates nearby restaurants using Google Geolocation and 
 Google Places, retrieves images from the aforementioned restaurants using the Flickr API, and 
 retrieves directions to the selected restaurant using Google Maps.
 
-[Live link](http://www.FisherCode.com/apps/ever_hungry)
+**[Live Link](http://www.FisherCode.com/apps/ever_hungry)**
 
-### Developers
-- Team: 
-  - Ever Garcia
-  - John Fisher
-  - Junie Hyun
-  - Sean Dove
-  - Wade Wooldridge
-  - Weikuan Sun
+### Development Team
+- Ever Garcia
+- John Fisher
+- Junie Hyun
+- Sean Dove
+- Wade Wooldridge
+- Weikuan Sun
   
 ### Key Technologies
 - **CSS3**
